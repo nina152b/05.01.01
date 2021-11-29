@@ -1,0 +1,60 @@
+* {
+  background-color: #d9bca3;
+  font-family: "Abel", sans-serif;
+  padding: 1%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*mobil udgave */
+@media (max-width: 600px) {
+  a {
+    font-family: "Abel", sans-serif;
+    color: #8c5c03;
+    text-shadow: 1px 1px #bf7e04;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+  }
+}
+
+/* desktop udgave*/
+@media (min-width: 600px) {
+  a {
+    font-family: "Abel", sans-serif;
+    color: #8c5c03;
+    text-shadow: 2px 2px #bf7e04;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 48px;
+  }
+
+  a:hover {
+    color: black;
+    background-blend-mode: soft-light;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+  }
+}
