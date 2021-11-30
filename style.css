@@ -53,7 +53,10 @@ article {
 }
 
 .tekst {
-  width: 80%;
+  width: 100%;
+  overflow: hidden;
+  max-width: 70ch;
+  line-height: 1.6;
 }
 
 .presentation {
@@ -62,6 +65,9 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 10px;
   line-height: 1.6;
+  overflow: hidden;
+  max-width: 160ch;
+  place-content: center;
 }
 
 .photos {
@@ -75,11 +81,18 @@ article {
   grid-column: 3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 10px;
+  gap: 30px;
+  overflow: hidden;
+  max-width: 158ch;
 }
 
 .demande {
   line-height: 0.5;
+}
+
+.interview_struk {
+  overflow: hidden;
+  max-width: 100ch;
 }
 
 /*mobil udgave */
