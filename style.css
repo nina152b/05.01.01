@@ -2,6 +2,7 @@
   background-color: #d9bca3;
   font-family: "Abel", sans-serif;
   padding: 1%;
+  margin-top: 15px;
 }
 
 img {
@@ -13,7 +14,7 @@ ul {
 }
 
 hr {
-  height: 50%;
+  height: 1px;
   background-color: #bf0426;
   border: none;
 }
@@ -70,6 +71,17 @@ article {
   gap: 10px;
 }
 
+.forklaring {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+}
+
+.demande {
+  line-height: 0.5;
+}
+
 /*mobil udgave */
 @media (max-width: 600px) {
   a {
@@ -97,15 +109,20 @@ article {
     font-family: "Abel", sans-serif;
     color: #8c5c03;
     text-shadow: 2px 2px #bf7e04;
-    justify-content: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 44px;
+    transition: 0.3s ease;
+    border-top: 2px solid #d9bca3;
+    border-bottom: 2px solid #d9bca3;
+    text-align: center;
   }
 
   a:hover {
     color: black;
     background-blend-mode: soft-light;
+    padding-bottom: 18px;
+    padding-top: 18px;
   }
 
   ul {
@@ -114,5 +131,15 @@ article {
     gap: 20px;
     list-style: none;
     justify-content: center;
+  }
+
+  .links {
+    display: flex;
+    place-content: center;
+    gap: 1%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
   }
 }
